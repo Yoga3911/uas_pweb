@@ -1,0 +1,121 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url("../img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.wrapper-nav {
+    top: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.btn-outline-success {
+    border-color: black;
+    color: black;
+}
+
+.btn-outline-success:hover {
+    background-color: black;
+    columns: white;
+    border-color: white;
+}
+
+.wrapper {
+    margin-left: 100px;
+}
+
+.title {
+    /* background-color: rgba(27, 19, 19, 0.7); */
+    cursor: default;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    margin-right: 120px;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-color: black;
+}
+
+#clock {
+    margin: auto;
+    width: 180px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ti1 {
+    border-radius: 10px;
+}
+
+
+.ti2 {
+    background-color: rgba(27, 19, 19, 0.7);
+    border-radius: 10px;
+    width: 200px;
+}
+
+.ti3 {
+    font-weight: 900;
+    color: black;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.title2 {
+    cursor: default;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    height: fit-content;
+}
+
+.myTitle {
+    font-size: 50px;
+    text-shadow: 0 0 6px #534e4e;
+}
+
+.myTitle2 {
+    font-size: 20px;
+    color: white;
+}
+
+.myCard:hover {
+    transform: rotate(2deg) scale(1.1);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(27, 19, 19);
+    color: white;
+}
+
+.page-link {
+    color: black;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: rgb(27, 19, 19);
+}
+
+.p2 {
+    margin-right: 70px;
+    width: 300px;
+}
