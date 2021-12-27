@@ -18,8 +18,6 @@ if (isset($_GET["group"])) {
     if ($conn->query($query)->num_rows == 0) {
         $count = 0;
     }
-    $result2 = $conn->query($query);
-    $count2 = $result2->num_rows;
 } else {
     if (isset($_GET['halaman'])) {
         $query = "SELECT * FROM film ORDER BY film_id DESC LIMIT {$_GET['halaman']}, 9";
@@ -29,10 +27,11 @@ if (isset($_GET["group"])) {
     $result = $conn->query($query);
     $query2 = "SELECT * FROM film";
     $result2 = $conn->query($query2);
-    $count2 = $result2->num_rows;
+    $count = $result2->num_rows;
 }
-
-
+$query2 = "SELECT * FROM film";
+$result2 = $conn->query($query2);
+$count2 = $result2->num_rows;
 ?>
 
 <!DOCTYPE html>
@@ -163,16 +162,16 @@ if (isset($_GET["group"])) {
             </div>
             <div class='title2 d-flex justify-content-end'>
                 <div class='ti3'>
-                    <p class="text-center myTitle2">Total Film: <?= $count2 ?></p>
+                    <p class="text-center myTitle2">Total Film: <?= $count ?></p>
                 </div>
             </div>
             <div class='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                <?php if ($count2 != 0) : ?>
-                    <?php $count = 1 ?>
+                <?php if ($count != 0) : ?>
+                    <?php $co = 1 ?>
                     <?php foreach ($result as $i) : ?>
                         <div class='col mb-5'>
                             <div class="card myCard" style="width: 18rem; height: 75vh;">
-                                <img src="img/gmb<?= $count ?>.jpg" class="card-img-top" alt="img">
+                                <img src="img/gmb<?= $co ?>.jpg" class="card-img-top" alt="img">
                                 <div class="card-body">
                                     <h5 class="card-title" style="font-weight: 800;"><?= $i["title"]; ?></h5>
                                     <div class='' style="font-size: 12px;">
@@ -186,8 +185,8 @@ if (isset($_GET["group"])) {
                                 </div>
                             </div>
                         </div>
-                        <?php if ($count == 9) $count = 0;
-                        $count++ ?>
+                        <?php if ($co == 9) $co = 0;
+                        $co++ ?>
                     <?php endforeach; ?>
                 <?php else : ?>
                     <div class='text-center' style="color: white; height: 350px;">
@@ -196,7 +195,7 @@ if (isset($_GET["group"])) {
                 <?php endif; ?>
             </div>
         </div>
-        <?php if ($count2 != 0) : ?>
+        <?php if ($count == $count2) : ?>
             <div class="d-flex justify-content-center my-3">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
