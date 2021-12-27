@@ -45,7 +45,7 @@ $count2 = $result2->num_rows;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
-    <link href="style/style2.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
     <title>Main</title>
 </head>
 

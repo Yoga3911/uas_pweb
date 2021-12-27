@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.title').css('opacity', 1);
-    $('.myTombol').css('opacity', 1); 
+    $('.myTombol').css('opacity', 0.7); 
     setTimeout(function() {
         $('.myTombol2').css('opacity', 1); 
       }, 1500);
