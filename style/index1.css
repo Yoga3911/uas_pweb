@@ -1,0 +1,93 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    color: white;
+}
+body {
+    background: url("../img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title {
+    top: 40%;
+    left: 50%;
+    position: fixed;
+    color: white;
+    font-size: 10vh;
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in;
+    opacity: 0;
+    animation: blinker 2s ease-in-out infinite;
+}
+
+.title2 {
+    top: 55%;
+    left: 50%;
+    position: fixed;
+    /* font-size: 10vh; */
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in;
+    /* opacity: 0; */
+}
+
+.title3 {
+    color: white;
+    font-size: 20px;
+    top: 63%;
+    left: 50%;
+    position: fixed;
+    /* font-size: 10vh; */
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in;
+    /* opacity: 0; */
+}
+.title2 {
+    top: 55%;
+    left: 50%;
+    position: fixed;
+    /* font-size: 10vh; */
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in;
+    /* opacity: 0; */
+}
+  
+.myTombol{
+    background-color: black;
+    color: white;
+    border: none;
+    height: 6%;
+    width: 10%;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-weight: 700;
+}
+
+.myTombol:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+#StrengthDisp {
+    display: none;
+}
+
+.myTombol {
+    opacity: 0;
+    transition: 1s ease-in;
+}
+
+.myTombol2 {
+    opacity: 0;
+    transition: 1s ease-in;
+}

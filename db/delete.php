@@ -2,7 +2,9 @@
 
 require_once "db.php";
 
-$query = "DELETE FROM warga WHERE id='".$_GET['id']."'";
+$id = $_GET['id'];
+
+$query = "DELETE FROM film WHERE film_id= '$id'";
 $conn->query($query);
 
-header('location: index.php');
+header('location: ../main.php');

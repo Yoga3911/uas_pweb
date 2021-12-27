@@ -99,6 +99,11 @@ body {
     color: white;
 }
 
+.myCard {
+    transition: 0.5s ease-out;
+    opacity: 0;
+}
+
 .myCard:hover {
     transform: rotate(2deg) scale(1.1);
     transition: 0.2s ease-in-out;
@@ -118,4 +123,8 @@ body {
 .p2 {
     margin-right: 70px;
     width: 300px;
+}
+
+.myAlert {
+    z-index: 5;
 }
